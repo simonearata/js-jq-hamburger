@@ -12,7 +12,7 @@ $(document).ready(function(){
   // flag 
   var testo_visibile = false;
 
-  // clicco sul tanto boolean e rendo visibile / nascosto il testo
+  // clicco sul tasto boolean e rendo visibile / nascosto il testo
 
   bottone.click(function(){
 
