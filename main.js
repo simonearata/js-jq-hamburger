@@ -1,33 +1,17 @@
 $(document).ready(function(){
+  
+  // click del tag a 
+  $('.header-right > a').click(function(){
+    // aggiungo la classe active a .hamburger-menu
+    $('.hamburger-menu').addClass('active');
+
+  });
 
 
-  // creo referenze agli elementi
-  var menu_hidden = $(".header-right");
-  var menu_ham = $(".hamburger-menu");
-  var bottone = $(".header-left");
+  $('.close').click(function(){
 
-  // menu principale nascosto
-  menu_hidden.hide();
-
-  // flag 
-  var testo_visibile = false;
-
-  // clicco sul tasto boolean e rendo visibile / nascosto il testo
-
-  bottone.click(function(){
-
-    if(testo_visibile === false){
-      menu_hidden.show();
-      testo_visibile = true;
-
-    }else{
-      menu_hidden.hide();
-      testo_visibile = false
-    }
+    $('.hamburger-menu').removeClass('active');
+  });
 
 
-  })
-
-
-
-})
+});
